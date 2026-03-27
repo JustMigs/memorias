@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memórias — uma coleção de momentos especiais">
+  <title>Memórias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pibble Wash Screen -->
+  <div class="pibble-screen" id="pibble-screen">
+    <div class="pibble-container">
+      <div class="speech-bubble">i'm pibble, wash my belly</div>
+      <div class="pibble-wrapper" id="pibble-wrapper">
+        <img src="pibble.png" alt="Pibble" class="pibble-img" id="pibble-img" draggable="false">
+        <div class="soap-overlay" id="soap-overlay"></div>
+        <div class="bubbles-container" id="bubbles-container"></div>
+      </div>
+      <div class="wash-progress-bar" id="wash-progress-bar">
+        <div class="wash-progress-fill" id="wash-progress-fill"></div>
+      </div>
+      <p class="pibble-hint" id="pibble-hint">🧽 passe o dedo na barriga dele!</p>
+    </div>
+  </div>
+
+  <!-- Music Prompt (needed for autoplay) -->
+  <div class="music-prompt hidden" id="music-prompt">
+    <h2>Exposição</h2>
+    <p>Uma coleção de momentos</p>
+    <button class="music-prompt-btn" id="music-prompt-btn">Entrar ♫</button>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Memórias</h1>
+  </header>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+
+    <!-- 2024-01 -->
+
+
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240109_200643_876_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240114_181312_831_1.webp" alt="Foto" loading="lazy"></div>
+
+
+    <!-- 2024-03 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20240329-WA0015_1.jpeg" alt="Foto" loading="lazy"></div>
+
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240329_222906_388_1.webp" alt="Foto" loading="lazy"></div>
+
+    <!-- 2024-05 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240527_131511_549_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240527_150211_534.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240527_174802_532_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20240529-WA0030_1.jpeg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2024-06 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240601_174400_836_1.webp" alt="Foto" loading="lazy"></div>
+
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240601_192302_927_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240601_192444_613_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240601_192509_926.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20240601_192518_513.jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2024-08 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20240815-WA0009_1.jpeg" alt="Foto" loading="lazy"></div>
+
+
+    <!-- 2024-12 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20241213-WA0010.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20241213-WA0011.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20241213-WA0014.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20241213-WA0043.jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-01 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG_20250105_211957_885_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20250105_212038_691_1.webp" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-02 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG_20250222_172208_991_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20250222_172510_572_1.webp" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-04 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250402-WA0035.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250402-WA0036.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20250417_141548_686_1.webp" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250417-WA0048_1.jpeg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250417-WA0063_1.jpeg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-05 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250514-WA0040.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250516-WA0020_1.jpeg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250516-WA0028_1.jpeg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-07 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250715-WA0135_1.jpeg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250715-WA0137_1.jpeg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250719-WA0049_1.jpeg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250722-WA0026_1.jpeg" alt="Foto" loading="lazy"></div>
+
+
+    <!-- 2025-09 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250914-WA0017.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250914-WA0018.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250914-WA0021.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20250914-WA0023.jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-10 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251011-WA0087.jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-11 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251122-WA0032_1.jpeg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251122-WA0048.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251122-WA0049.jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2025-12 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251221-WA0003.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251221-WA0004.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251221-WA0005.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20251221-WA0006.jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2026-01 -->
+    <div class="gallery-item"><img src="wooz_2026-01-16-221432.png" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20260118_184058_1.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG_20260118_184145_1.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20260122-WA0071.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20260122-WA0073.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20260122-WA0074.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20260127-WA0066.jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- 2026-03 -->
+    <div class="gallery-item"><img src="Fotos ana/IMG-20260302-WA0017.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20260302-WA0020.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/IMG-20260303-WA0004.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Captura de tela 2026-03-26 200953.png" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Captura de tela 2026-03-26 201023.png" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Captura de tela 2026-03-26 201045.png" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Captura de tela 2026-03-26 201103.png" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Foto de Miguel.jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Foto de Miguel(1).jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Foto de Miguel(2).jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Foto de Miguel(3).jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Foto de Miguel(4).jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Foto de Miguel(5).jpg" alt="Foto" loading="lazy"></div>
+    <div class="gallery-item"><img src="Fotos ana/Foto de Miguel(6).jpg" alt="Foto" loading="lazy"></div>
+
+    <!-- Videos -->
+    <div class="gallery-item video-item">
+      <video muted loop playsinline preload="metadata">
+        <source src="Fotos ana/VID-20260302-WA0025.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="gallery-item video-item">
+      <video muted loop playsinline preload="metadata">
+        <source src="Fotos ana/VID-20260302-WA0027.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="gallery-item video-item">
+      <video muted loop playsinline preload="metadata">
+        <source src="Fotos ana/VID_80800313_042846_702.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-message">Espero que possamos povoar essa página com mais partes da nossa linda história.</p>
+    <span>♡</span>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev">‹</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next">›</button>
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+  </div>
+
+  <!-- Audio Player -->
+  <div class="audio-player" id="audio-player">
+    <button class="audio-btn" id="audio-btn">▶</button>
+    <div class="audio-info">
+      <span class="audio-title">All I Wanted</span>
+      <span class="audio-artist">Paramore</span>
+    </div>
+  </div>
+
+  <audio id="bg-audio" loop preload="auto">
+    <source src="Paramore - All I Wanted.mp3.webm" type="audio/webm">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
